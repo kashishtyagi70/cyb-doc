@@ -1,0 +1,299 @@
+/* =============================================================================
+   ROOT COLORS
+============================================================================= */
+
+:root {
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+
+  --ifm-background-color: #0f172a;
+  --ifm-navbar-background-color: #111827;
+  --ifm-footer-background-color: #111827;
+
+  --ifm-font-color-base: #e2e8f0;
+
+  --ifm-heading-color: #ffffff;
+
+  --ifm-code-font-size: 95%;
+
+  --ifm-border-color: #1e293b;
+
+  --ifm-global-radius: 12px;
+
+  --ifm-hover-overlay: rgba(255, 255, 255, 0.05);
+
+  --ifm-font-family-base:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+/* =============================================================================
+   BODY
+============================================================================= */
+
+body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* =============================================================================
+   NAVBAR
+============================================================================= */
+
+.navbar {
+  background: rgba(17, 24, 39, 0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #1e293b;
+}
+
+.navbar__title {
+  font-weight: 700;
+  color: white;
+}
+
+.navbar__link {
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+.navbar__link:hover {
+  color: white;
+}
+
+/* =============================================================================
+   SIDEBAR
+============================================================================= */
+
+.theme-doc-sidebar-container {
+  background: #111827;
+  border-right: 1px solid #1e293b;
+}
+
+.menu {
+  padding: 1rem;
+}
+
+.menu__link {
+  border-radius: 10px;
+  color: #cbd5e1;
+  transition: all 0.2s ease;
+}
+
+.menu__link:hover {
+  background: #1e293b;
+  color: white;
+}
+
+.menu__link--active {
+  background: #2563eb;
+  color: white !important;
+}
+
+/* =============================================================================
+   DOC CONTENT
+============================================================================= */
+
+.theme-doc-markdown {
+  max-width: 900px;
+}
+
+.theme-doc-markdown h1,
+.theme-doc-markdown h2,
+.theme-doc-markdown h3 {
+  color: white;
+}
+
+.theme-doc-markdown p,
+.theme-doc-markdown li {
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+/* =============================================================================
+   TABLES
+============================================================================= */
+
+table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+table th {
+  background: #1e293b;
+  color: white;
+}
+
+table td {
+  background: #0f172a;
+}
+
+/* =============================================================================
+   CODE BLOCKS
+============================================================================= */
+
+pre {
+  background: #020617 !important;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+}
+
+code {
+  border-radius: 6px;
+}
+
+/* =============================================================================
+   BUTTONS
+============================================================================= */
+
+.button {
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+/* =============================================================================
+   FOOTER
+============================================================================= */
+
+.footer {
+  background: #111827;
+  border-top: 1px solid #1e293b;
+}
+
+.footer__title {
+  color: white;
+}
+
+.footer__link-item {
+  color: #cbd5e1;
+}
+
+.footer__link-item:hover {
+  color: white;
+}
+
+/* =============================================================================
+   SCROLLBAR
+============================================================================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* =============================================================================
+   ADMONITIONS (INFO / WARNING / TIP BOXES)
+============================================================================= */
+
+.alert {
+  border-radius: 16px;
+  border: 1px solid #1e293b;
+  color: #e2e8f0 !important;
+}
+
+.alert--info {
+  background: rgba(37, 99, 235, 0.12);
+  border-left: 4px solid #2563eb;
+}
+
+.alert--warning {
+  background: rgba(245, 158, 11, 0.12);
+  border-left: 4px solid #f59e0b;
+}
+
+.alert--danger {
+  background: rgba(239, 68, 68, 0.12);
+  border-left: 4px solid #ef4444;
+}
+
+.alert--success {
+  background: rgba(16, 185, 129, 0.12);
+  border-left: 4px solid #10b981;
+}
+
+/* Fix light text issue */
+.alert * {
+  color: #e2e8f0 !important;
+}
+
+/* =============================================================================
+   INLINE CODE
+============================================================================= */
+
+code {
+  background: #1e293b !important;
+  color: #93c5fd !important;
+  padding: 2px 6px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+}
+
+/* =============================================================================
+   CODE BLOCKS
+============================================================================= */
+
+pre {
+  background: #020617 !important;
+  border-radius: 18px !important;
+  border: 1px solid #1e293b !important;
+  padding: 20px !important;
+  overflow-x: auto;
+}
+
+/* Remove ugly default shadow */
+pre code {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+/* =============================================================================
+   HR LINES
+============================================================================= */
+
+hr {
+  border-color: #1e293b;
+}
+
+/* =============================================================================
+   LISTS
+============================================================================= */
+
+ul li,
+ol li {
+  color: #e2e8f0;
+}
+
+/* =============================================================================
+   BLOCKQUOTES
+============================================================================= */
+
+blockquote {
+  border-left: 4px solid #2563eb;
+  background: #111827;
+  border-radius: 12px;
+  color: #cbd5e1;
+}
